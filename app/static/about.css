@@ -1,0 +1,120 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+.svg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+svg {
+    path {
+        transition: .01s;
+    }
+    &:hover path {
+        d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
+    }
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+header {
+    color: #fff;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+    text-align: center;
+}
+
+main {
+    background: rgb(9, 9, 133);
+    padding: 5vh 0 5vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding:2rem 7rem;
+}
+@media (max-width:578px){
+    main {
+        
+        padding:2rem 2rem;
+        position: relative;
+    }
+
+}
+footer {
+    background-color:#c6a220;
+    padding: 5vh 0;
+    text-align: center;
+    position: relative;
+}
+small {
+    opacity: .5;
+    font-weight: 300;
+    a {
+        color: inherit;
+    }
+}
+.naviconss:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 227, 227);
+}
+
+.naviconss {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding:4rem 8rem;
+}
+
+.container h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.container p {
+    margin:2rem 5rem;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}

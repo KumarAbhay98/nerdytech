@@ -1,0 +1,58 @@
+/* Your existing CSS styles */
+
+/* Add the following styles for the form */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(blue, yellow);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+.login-btn{
+    background-color: #ffc107;
+    border: none;
+}
+.login-btn:hover{
+    background-color: #ffa000;
+}
+a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(251, 252, 246, 0.9); /* Adjust background color and transparency */
+    box-shadow: 4px 4px 8px rgba(169, 190, 12, 0.1);
+    padding: 30px;
+}
+
+/* Additional styles for bubbles */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../ITEMS/yellowbubble.png') repeat;
+    z-index: -1;
+    animation: floatBubbles 15s linear infinite;
+}
+
+/* Other bubble styles */
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+}

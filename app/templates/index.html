@@ -1,0 +1,1233 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="apple-touch-icon" type="image/png" href="/icon.png" />
+  <link rel="stylesheet" href="/static/index.css" />
+
+  <title>Nerdy</title>
+</head>
+
+<body>
+  <div id="main-body">
+    <div class="bgg"></div>
+    <div class="bgg bg2"></div>
+    <div class="bgg bg3"></div>
+
+
+
+    <!-- har ghar tiranga -->
+    <div class="tiranga">
+      <a href="https://amritmahotsav.nic.in/" rel="" target="_blank" class="box-azadi">
+        <span class="azadi fw-bold">Azadi</span>
+        <span class="ka fw-bold">Ka Amrit</span>
+        <span class="mahotsav fw-bold">Mahotsav</span>
+      </a>
+    </div>
+   
+
+
+    <!-- Navgation bar -->
+    <nav class="navbar navbar-expand-lg mx-3 fixed-top" >
+      <div class="container-fluid mx-2">
+        <a class="navbar-brand" href="Index.html">
+          <img src="{% static '/ITEMS/notesicon.png'%}" 
+          class="img-fluid" width="40" height="40" style="margin-top: -13px"
+          alt="Nerdy Logo">
+          <span class="nav-brand">Nerdy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:#ffc107;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#section8" style="color:#ffc107">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'about' %}" style="color:#ffc107">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color:#ffc107">
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="mailto:Abhaycbr07@gmail.com" style="color:#ffc107">Contact Us</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a target="_blank" class="dropdown-item" href="https://hbtu.ac.in/" style="color:#ffc107">My College</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="{% url 'logout' %}" style="color:#ffc107">Logout</a>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--Animated nerddy's-->
+    <div class="container main-container" style="background: none;">
+      <main id="main">
+        <div class="text-center">
+          <h3 class="animate-character">NERDY</h3>
+        </div>
+        <p class="mainpage-text">
+          "The more often you write, the better you become at your speechmaking skills and other communication
+          skills. Regular writing is important for developing your critical thinking skills."
+        </p>
+        <br>
+        <p class="lead text-center">
+          <a href="https://www.masterclass.com/articles/how-to-write-a-blog-post#how-to-write-a-blog-post-in-10-steps"
+            class="btn btn-sm btn-dark">Learn more</a>
+        </p>
+        <br>
+        <p class="text-center text-white">
+          Blogs for modern learners by <a href="https://www.linkedin.com/in/abhay-kumar-6586b220a"
+            class="text-black">@Abhaysahil</a>.
+        </p>
+      </main>
+    </div>
+
+
+
+    <!-- carousel -->
+    <div class="border-black" style="background-color: #ffffff4f;">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'ITEMS/carousel11.png' %}" class=" carousel-img d-block w-100 " alt="..." />
+            <div class="carousel-caption  d-md-block">
+              <div class="border" style="background-color: #2e94b34e;">
+                <ul class="carousel-btns btn-outline-info" style="text-decoration: none;">
+                  <li><a target="_blank" class="btn text-white" href="https://aktuquantum.com/">Notes</a></li>
+                  <li><a class="btn text-white" href="#section7">Tech-articles</a></li>
+                  <li><a class="btn text-white" href="#section8">Blogs</a></li>
+                  <li><a target="_blank" class="btn text-white" href="https://cloud.google.com/certification/">Google
+                      cloud certifications</a></li>
+                  <li><a target="_blank" class="btn text-white" href="https://www.hackathon.com/">Hackathones</a></li>
+                  <li><a target="_blank" class="btn text-white"
+                      href="http://projectcentersinchennai.co.in/Domains/Final-Year-Project-Domains-for-IT">Explore
+                      More..</a></li>
+                </ul>
+              </div>
+              <h1 class="text-right">Welcome to Nerdy</h1>
+              <p>"Do the best you can"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'ITEMS/carousel22.png' %}" class="carousel-img d-block w-100" alt="..." />
+            <div class="carousel-caption  d-md-block" style="margin-bottom: 100px;">
+              <!-- Content for second carousel item -->
+              <a target="_blank"
+                href="https://www.coursera.org/courses?languages=en&query=web%20design&utm_source=bg&utm_medium=sem&utm_campaign=B2C_INDIA___FTCOF__arte_bing_branded&utm_content=B2C_INDIA___FTCOF__arte_bing_branded&campaignid=415374026&adgroupid=1221557894734029&device=c&keyword=https%3A%2F%2Fwww.coursera.org%2F&matchtype=b&network=o&devicemodel=&adpostion=&creativeid=&hide_mobile_promo&msclkid=8813f971d9dd1a3d019b9a6e9a9de11e&utm_term=https%3A%2F%2Fwww.coursera.org%2F"
+                type="button" class="btn btn-outline-danger">Web Designer</a>
+              <a target="_blank" href="https://internshala.com/internships/keywords-content%20writing/" type="button"
+                class="btn btn-outline-light">Content Writer</a>
+              <a target="_blank" href="https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing"
+                type="button" class="btn btn-outline-success">Marketing</a>
+              <h1 class="text-center-white">Be stronger than your strongest excuse!</h1>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'ITEMS/carousel33.png' %}" class=" carousel-img d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <!-- Content for third carousel item -->
+              <div class="carousel-btnss border" style="margin-bottom: 5rem;border:none">
+                <a target="_blank"
+                  href="https://www.trendymami.com/fun-hobbies-that-you-can-do-indoors-and-are-stress-relieving/?keyword=hobbies&utm_source=bing&utm_medium=cpc&utm_campaign=India%20Traffic&utm_term=hobbies&utm_content=Fun%20Hobbies%20That%20You%20can%20do%20Indoors%20and%20are%20Stress%20Relieving"
+                  type="button" class="btn btn-primary btn-block">Make a new hobby</a>
+                <br>
+                <br>
+                <a target="_blank"
+                  href="https://www.holidify.com/pages/exotic-places-in-india-within-20k-3540.html#:~:text=%20Exotic%20Tourist%20Places%20To%20Visit%20In%20India,the%20traditional%20Indian%20sensibilities%20and%20French...%20More%20"
+                  class="btn btn-primary btn-block">Go On Trips</a>
+                <br>
+                <br>
+                <a target="_blank"
+                  href="https://www.lifehack.org/articles/lifestyle/25-essential-books-that-every-college-student-should-read.html"
+                  type="button" class="btn btn-primary btn-block">Reading
+                  and Music</a>
+                <br>
+                <br>
+                <a target="_blank" href="https://mindworks.org/blog/how-to-start-meditating/" type="button"
+                  class="btn btn-primary btn-block">Meditation</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- set of four cards -->
+    <section class="big-box" style="background-color:#c9cf12" id="section6" style="padding-bottom:10px;">
+
+      <!-- free yourself from procrastination card-->
+      <div>
+        <h1 class="tackle" style="font-family:gill">Tackle your own problems...</h1>
+        <div class="container">
+          <section class="card-set">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <div class="card">
+                  <div class="card-body text-dark fw-bold" style="background-color:#b80f0f">
+                    <h5 class="card-title">Lack of Motivation...</h5>
+                    <p class="card-text text-white" style="font-family:Lucida Sans">
+                      There are also such students in large quantity who pay no care and attention towards attending
+                      schools or also don’t bother to make efforts in order to maintain their grades. It becomes much
+                      frustrating to have such student in a class that only present there because they thought they
+                      should
+                      be present. These are those students who are not motivated in the start on their level of scores
+                      and
+                      when they wake up and starts realizing then they came to know that it is too late. So, it is the
+                      duty of a teacher and administrator to motivate the students.
+
+
+                    </p>
+                    <a target="_blank" href="https://www.choosingtherapy.com/lack-of-motivation/"
+                      class="btn btn-dark">Read More...</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-6">
+                <div class="card">
+                  <div class="card-body text-dark fw-bold" class="container" style="background-color:#cade13">
+                    <h5 class="card-title">Low Self-Esteem and Academic Performance...</h5>
+                    <p class="card-text text-white" style="font-family:Lucida Sans">
+                      Researchers have conducted research and evaluated effects of self-esteem and academic performance.
+                      Many behavioral and educational problems arise due to low self-esteem. In educational institutes,
+                      different kinds of problems occur such as psychological and physical health problem. Self-esteem
+                      has
+                      become a major concern in organizations and educational institutions. Therapists, teachers, and
+                      parents give attention towards students and help them to increase their confidence. So start loving yourself because you are special.
+                    </p>
+                    <a target="_blank" href="https://www.nerdycreator.com/blog/how-to-deal-with-low-self-esteem/"
+                      class="btn btn-dark">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-sm-12 col-lg-6">
+                <div class="card">
+                  <div class="card-body text-dark fw-bold" class=" container" style="background-color:#120b96">
+                    <h5 class="card-title">Relationship of Depression and Students’ Learning...</h5>
+                    <p class="card-text text-white" style="font-family:Lucida Sans">
+                      Studies have examined the connection between depression and students’ academic performance. There
+                      is
+                      a significant negative relationship between students’ performance and depression. Researchers have
+                      identified that different level of depression affects students’ grades. Moderate level of
+                      depression
+                      leads to low performance while normal depression does not have a negative effect on students’
+                      grades. Results suggest that there is a need to take preventive measures so that depression among
+                      students can be reduced.
+
+
+                    </p>
+                    <a target="_blank" href="https://psychcentral.com/depression/depression-in-students"
+                      class="btn btn-dark">Read More...</a>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="col-sm-12 col-lg-6">
+                <div class="card">
+                  <div class="card-body text-dark fw-bold" class="container" style="background-color:#cd157d">
+                    <h5 class="card-title">Failing To Manage Money...</h5>
+                    <p class="card-text text-white" style="font-family:Lucida Sans">
+                      Most of the college students have the issues to manage money, as they are not able to manage the
+                      money personally, thus, they may not know that how to make the plan about the money, the student
+                      in
+                      this way cannot pay attention to studies because there is always the tension or the depression
+                      created because of the money issues. Moreover, the student sometimes does not know that how to set
+                      the financial goals because they never knew the value of money or that the money is important in
+                      the
+                      future, they can make goal permanent.
+
+
+                    </p>
+                    <a target="_blank"
+                      href="https://www.rasmussen.edu/student-experience/college-life/money-management-tips-for-college-students/"
+                      class="btn btn-dark">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="accordian-p">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How to overcome anxiety?
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+
+                    <b>Your goal is to develop a set of tools that help you cope with anxiety both before and after
+                      you're suffering. You can also use these tools to provide you with much-needed relaxation, rather
+                      than make your anxiety worse. Consider the following tips and strategies for preventing
+                      anxiety:</b>
+                    <br>
+                    <br>
+
+
+                    <b>Tip 1:</b> Exercise Often
+                    It's repeated time and time again how important exercise is for your mental health, and it simply
+                    cannot be emphasized enough. Regular physical exertion is one of the most powerful tools available
+                    for fighting anxiety, and if you aren't at least considering it then you're not doing what it takes
+                    to be anxiety free.
+                    <br>
+
+                    Exercise has been found to stimulate the production of calming neurochemicals such as endorphins and
+                    reduces levels of cortisol (the “stress hormone”) burns away stress hormones. This is associated
+                    with a reduction in anxiety symptoms. It is probably the single most important thing you can do to
+                    fight anxiety.
+                    <br>
+                    <br>
+                    <br>
+
+                    <b>Tip 2:</b> Re-Learn Breathing
+                    Most people don't realize this, but anxiety can actually alter the way you breathe. Those with
+                    anxiety tend to take faster breaths, often taking in more oxygen than they need. This is called
+                    "hyperventilation" and it's responsible for many of the physical symptoms of anxiety attacks.
+                    <br>
+
+
+                    You can re-train your body to breathe in a healthier way. It isn't easy but by spending 10 minutes a
+                    day breathing much more slowly, taking in full breaths deep into the abdomen can get your body back
+                    into better habits. Also, if you feel some of the symptoms of hyperventilation, slow down your
+                    breathing to reduce the severity of those symptoms.
+                    <br>
+                    <br>
+                    <br>
+
+                    <b>Tip 3:</b> Avoid Over-thinking
+                    Normally, when it comes to stress, some alone time can be very helpful. But for those with daily,
+                    persistent anxiety, too much time alone with your own thoughts may cause problems of its own.
+                    Remember that anxiety has the potential to alter thought patterns. So if you have anxiety, your
+                    thoughts are more prone to being to being negative and fearful, often focusing on worst-case
+                    scenarios or thoughts of lacking control. This can lead to further stress and anxiety.
+                    <br>
+
+
+
+                    If you tend to get stuck in anxious thinking, it can help to plan to keep your mind occupied. It’s
+                    still important to have time to rest and relax, but scheduled activities (healthy activities, of
+                    course - not partying, which we'll discuss in a bit) and commitments can provide a distraction from
+                    focusing on your anxieties, giving them less space to grow.
+                    <br>
+                    <br>
+                    <br>
+
+                    <b>Tip 4:</b> Avoid Crutches
+                    We mentioned that you should avoid the partying lifestyle to prevent anxiety, and it's important
+                    that you do your best to avoid crutches that could exacerbate your anxiety further.
+                    <br>
+
+                    A crutch is a strategy that reduces anxiety in the short-term. However, as soon as you stop using
+                    that strategy, the anxiety returns. In this way, you don’t learn to cope in the long run. Drinking
+                    alcohol and using recreational drugs can often reduce anxiety in the moment, but may mask the
+                    underlying problem. They also have additional negative side-effects than can contribute to anxiety
+                    themselves.
+                    <br>
+                    <br>
+
+                    Even a seemingly “healthy” behavior could become a crutch if you rely on it too heavily and it stops
+                    you from learning to cope on your own. For example, always relying on a partner to relieve your
+                    anxiety when going out may work, but doesn’t teach you how to manage anxiety if they’re not around.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How to stop overthinking?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Avoid Over-thinking
+                    Normally, when it comes to stress, some alone time can be very helpful. But for those with daily,
+                    persistent anxiety, too much time alone with your own thoughts may cause problems of its own.
+                    Remember that anxiety has the potential to alter thought patterns. So if you have anxiety, your
+                    thoughts are more prone to being to being negative and fearful, often focusing on worst-case
+                    scenarios or thoughts of lacking control. This can lead to further stress and anxiety.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    How to do smart work?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Smart work means achieving the maximum result with the minimum time and
+                    effort. Doing something effortlessly is also smart work.
+
+                    Precisely, when you love your job and do that with proper planning and happiness, you do smart work
+                    then.
+
+                    A smart person has a clear idea of his works. First, he decides where to stop rather than what to
+                    achieve.
+
+                    It is an obvious fact that we are usually confused about smart work and hard work. Sometimes we
+                    assume hard work is smart work and vice-versa.
+                    <br>
+
+
+                    <h3>How to do smart work?</h3>
+                    <br>
+
+                    <b>1. Love What You Are Doing:</b>
+                    <br>
+                    Either love what you are doing or do what you love.
+
+                    Happiness in your job is the most crucial part of your life. If you fail to love your job, you are
+                    not a happy person anymore. The others could give you temporary happiness but you will be unable to
+                    be completely happy.
+
+                    If you are not happy, your mind is always disturbed and in search of happiness. Now how a disturbed
+                    mind could think about planning and innovative ideas to enrich his business.
+
+                    When your mind is confused and you are not happy, you could never do the smart work.
+
+                    Precisely, firstly you have to love your job to work smart.
+
+                    When you love language learning is it a burden for you then? But what if I impose upon you the same.
+                    You will be frustrated, isn’t it?
+
+                    So, when you do not love language learning then how can you find different ways to learn the
+                    language as fun?
+
+                    On the other hand, when you love your career or job, you are happy and you progress more. You love
+                    challenges then and your life becomes easy and happy.
+
+                    So the first method is to love what you are doing. Sometimes it is hard to love our current jobs, in
+                    that case, you have to be daring to start a new one.
+                    <br>
+                    <br>
+
+                    <b>2. Proper Planning:</b>
+
+                    <br>
+                    A great business idea could be a failure if it is not well planned and a small business could be a
+                    giant if it is well planned.
+
+                    Without the right planning and proper understanding, you will end up working hard. Great planning
+                    and brilliant strategies can transform an ordinary business into extraordinary.
+
+                    What is proper planning?
+                    There is no such blueprint regarding proper planning. It is all about the clarity which you have
+                    about your job. A complete idea about your business always leads to the right planning.
+
+                    You need to know your to-do lists and not-to-do lists, your limitations, weaknesses and strong
+                    points to give birth to the right planning and brilliant strategies.
+
+                    What is the proper planning for a business or job?
+
+                    To me, if you have clear answers to the following questions, your job or business is well planned
+                    and you are doing smart work.
+                    <br>
+
+
+                    <b>The questions are:</b>
+                    <br>
+
+                    Why do you want to start your business?
+                    How your company is beneficial to society?
+                    What excites you? Is it money or the idea of creating something new and innovative?
+                    Which are your weaknesses or strengths?
+                    What if your company fail? Will you start a new one or will be depressed?
+                    When your what and why are clear and you are doing something beneficial to society, you get the
+                    energy to do it. You are happy then and you are doing the smart work.
+                    <br>
+                    <br>
+
+                    <b>3. A Deep Desire for Learning.</b>
+                    <br>
+
+                    Your knowledge can only distinguish you from others. Your learning is the thing that makes you
+                    extraordinary.
+
+                    Without acquiring the right knowledge you can never enjoy the true happiness of success. A strong
+                    desire for learning helps you to excel in anything. It makes you wise and confident.
+
+                    When you can learn anything, you can do anything and you can be anything in life. When you learn
+                    many things, you think differently and your mind opens up. An open mind can only see the
+                    opportunities.
+
+                    Knowledge of many things makes you different from the mass, you become confident and experienced.
+                    You are smart then.
+
+                    Learning means more information and more information means different thoughts; different thoughts
+                    make you unique and smart.
+                    <br>
+                    <br>
+
+                    <b>4. Think Outside the Box.</b>
+                    <br>
+                    Following the traditional path does not make you a smart person. When you do what everybody is
+                    doing, you become the same and it is not a sign of a smart person.
+
+                    Smart people create their paths and they open them for many. You will be unable to make the paths
+                    for many if you follow someone.
+
+                    Learn from everybody follow from none.
+
+                    You need to think outside the box to be a smart guy. Without the out of the box thinking, you can
+                    never face challenges, failures and sorrows which are crucial to being a great human being and the
+                    best businessman also.
+
+                    When you taste the failures, your success becomes tastier and your life becomes easy.
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingfour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                    How to excel in time management?
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Do you often feel stressed out with too much work or too many
+                    responsibilities? As time passes, do you feel like you have more tasks on hand than you have time to
+                    do them<br>
+
+                    The trick is to organize your tasks and use your time effectively to get more things done each day.
+                    This can help you to lower stress levels and improve your productivity both at work and at home.
+                    <br>
+
+                    Time management skills take time to develop and will look different for each person. Finding what
+                    works best for you and your busy schedule is key here.
+                    <br>
+
+                    <b>To get you started, here are 5 ways to improve your time management skills and increase
+                      productivity.</b>
+                    <br>
+                    <br>
+
+                    <b>1. Delegate Tasks</b>
+                    <br>
+                    It is common for all of us to take on more tasks than we are capable of completing. This can often
+                    result in stress and burnout.
+
+                    Delegation does not mean you are running away from your responsibilities but are instead learning
+                    proper management of your tasks. Learn the art of delegating work to your subordinates as per their
+                    skills and abilities and get more done. This will not only free up time for you but will help your
+                    team members feel like an integral piece of the work puzzle.
+                    <br>
+                    <br>
+
+                    <b>2. Prioritize Work</b>
+                    <br>
+                    Before the start of the day, make a list of tasks that need your immediate attention. Unimportant
+                    tasks can consume much of your precious time, and we tend to offer these too much of our energy
+                    because they are easier or less stressful.
+                    <br>
+
+                    However, identifying urgent tasks that need to be completed on that day is critical to your
+                    productivity. Once you know where to put your energy, you will start to get things done in an order
+                    that works for you and your schedule.
+                    <br>
+
+                    In short, prioritize your important tasks to keep yourself focused.
+                    <br>
+                    <br>
+
+                    <b>3. Create a Schedule</b>
+                    <br>
+                    Carry a planner or notebook with you and list all the tasks that come to your mind. Being able to
+                    check off items as you complete them will give you a sense of accomplishment and keep you motivated.
+                    <br>
+
+                    Make a simple ‘To Do’ list before the start of the day, prioritize the tasks, and focus on the
+                    essentials. Make sure that these tasks are attainable, too. If there is a big task you need to
+                    complete, make that the only thing on your list. You can push the others to the next day.
+
+                    To better manage your time management skills, you may think of making 3 lists: work, home and
+                    personal.
+                    <br>
+                    <br>
+
+                    <b>4. Set up Deadlines</b>
+                    <br>
+                    When you have a task at hand, set a realistic deadline and stick to it. Once you set a deadline, it
+                    may be helpful to write it on a sticky note and put it near your workspace. This will give you a
+                    visual cue to keep you on task.
+
+                    Try to set a deadline a few days before the task is due so that you can complete all those tasks
+                    that may get in the way. Challenge yourself and meet the deadline; reward yourself for meeting a
+                    difficult challenge.
+                    <br>
+                    <br>
+
+                    <b>5. Overcome Procrastination</b>
+                    <br>
+
+                    Procrastination is one of the things that has a negative effect on productivity. It can result in
+                    wasting essential time and energy. It could be a major problem in both your career and your personal
+                    life[1].
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingfive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                    How to overcome fear of public speaking?
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">As you advance in the professional world, you may be asked or even
+                    required to speak publicly about your work. It is essential that you present yourself in the best
+                    way possible without letting the effects of fear overtake you. The fear of public speaking is common
+                    and sometimes crippling, but there are steps you can take to understand and overcome your fear.
+
+                    <br>
+                    <br>
+                    The fear of public speaking is common but there are steps you can take to overcome your fear. Here
+                    are some tips that may help you reduce your fear before a speaking engagement:
+                    <br>
+                    <br>
+                    <ul>
+                      <li>Get organized.</li>
+                      <li>Practice your speech.</li>
+                      <li>Visualize a positive outcome.</li>
+                      <li>Get support.</li>
+                      <li>Start small.</li>
+                    </ul>
+                    <b>Get organized</b>
+                    <br>
+                    When you organize yourself, you are more likely to have a clear mind so you can better focus on your
+                    key points. Here are some ways to get organized:
+
+                    Research your topic thoroughly.
+                    Examine your target audience.
+                    Create an outline and cue cards.
+                    <br>
+                    <br>
+                    <b>Practice your speech</b>
+                    <br>
+
+                    Your nervousness will dissipate when you practice and practice often. Before you write cue cards, it
+                    may be helpful to write a script and go over it a few times to memorize your key points. Here are a
+                    few ways you can practice:
+
+                    Rehearse in front of a mirror.
+                    Record yourself.
+                    Give your speech in front of a friend or family member.
+                    Once you complete any or all of these tasks, you can change your presentation accordingly.
+                    <br>
+                    <br>
+
+                    <b>Visualize a positive outcome</b>
+                    <br>
+                    Think about what a positive outcome looks like, feels like and sounds like to you. Write down these
+                    outcomes and identify any probable alternative outcomes. Scratch a line through any outcome you
+                    would not want to happen and circle the outcomes that you would like to happen. You may also
+                    practice the audience reaction with an individual that listens to your speech before you give it to
+                    a large or small group.
+                    <br>
+                    <br>
+
+                    <b>Get support</b>
+                    <br>
+                    It is easier to overcome fear when you have people to encourage you who have experienced the same
+                    thing as you. Here are a few ways you can find support and encouragement in your community, as well
+                    as online:
+
+                    Join a public speaking group.
+                    Find a speech coach.
+                    Watch videos of speeches.
+                    <br>
+                    <br>
+                    <b>Start small</b>
+                    <br>
+                    There are steps you can take to overcome your fear of public speaking and master the art of giving
+                    speeches. Starting with small events will likely give you the confidence and expertise you need to
+                    speak in front of a larger audience. Here are a few ways you can start small:
+
+                    Deliver a speech to two or three people.
+                    Give a toast at a friend’s wedding or other intimate event.
+                    Volunteer to speak in front of a small audience, such as a small class or at a community center.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid mt-0">
+      <div class="container">
+        <div class="row gx-8 justify-content-around">
+
+          <div class="col-lg-3 col-md-3" style="background-color:rgb(142, 12, 112)">
+            <p class="grid-ss text-white">Learning is not attained by chance, it must be sought for with ardor and
+              diligence ,Common
+              sense is the collection of prejudices </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-3" style="background-color:rgb(142, 172, 12)">
+            <p class="grid-ss text-white">A man only learns in two ways, one by reading, and the other by association
+              with
+              smarter
+              people also if you want success rate, double your failure rate </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-3" style="background-color:rgb(31, 170, 19)">
+            <p class="grid-ss text-white">The ability to speak exactly is intimately related to the ability to know
+              exactly and any
+              fool can know the point is to understand.</p>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+    <section id="section8" style="background: none;">
+      <div>
+        <div class="row p-5">
+          <div class="col-lg-7 col-sm-12 col-md-12">
+            <h1 class="fw-bold text-white" style="font-family: flix;">Welcome to Our Blogs</h1>
+            <p class="lead text-dark">As we near the end of this website, you might wonder if you've seen it all.
+              However, the journey continues with a collection of fascinating blogs awaiting you on our next page. The
+              more
+              you read, the more knowledge you'll gain and soon my another wordpress website will also be live called 'witchats'</p>
+            <div>
+              <a href="#section9" type="button" class="btn btn-outline-dark btn-lg px-4">Explore Blogs</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-sm-12 col-md-12 mt-4 mt-lg-0">
+            <img src="{% static '/ITEMS/blog.png'%}" class="img-fluid responsive-img" alt="Blogs Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="containers start-blog" style="background-color:#b7d50b">
+        <div class="col-md-5 col-lg-5 col-sm-12">
+          <img
+            src="{% static '/ITEMS/procrastination.png' %}"
+            class="img-fluid" alt="Procrastination Image">
+        </div>
+        <br>
+        <div class="container-fluid row featurette">
+          <div class="col-md-7 col-lg-12 col-sm-12" style="padding-left: 0;">
+            <h3 class="featurette-heading py-2 text-dark" style="font-family: 'flix', sans-serif;">
+              “My mother always told me I wouldn’t amount to anything because I procrastinate. I said, ‘just wait.’ I
+              started improving day-by-day.”
+            </h3>
+            <p class="text-dark" style="font-family: 'verdana', sans-serif;">
+              Procrastination is a challenge we have all faced at one point or another. For as long as humans have been
+              around, we have been struggling with delaying, avoiding, and procrastinating on issues that are important
+              to
+              us.
+
+              Now before starting let's throw some light on the word "Procrastination".
+              Procrastination is the act of delaying or postponing a task or set of tasks. So, whether you refer
+              to it
+              as procrastination or akrasia(word by Aristotle) or something else, it is the force that deters
+              you
+              from
+              following through on what you set out to do.
+              <br>
+              <br>
+              <br>
+
+              "Time Inconsistency" is a phenomenon revealed by research called "Behavioural psychology" which
+              helps
+              explain why procrastination seems to pull us in despite our good intentions.
+              Time inconsistency refers to the tendency of the human brain to value immediate rewards more
+              highly
+              than
+              future rewards.
+
+              <span class="text-dark" style="font-family:verdana" , Times, serif>
+                After understanding the topic called "Procrastination" it's time to look into the ways of
+                safeguarding
+                yourself from this.
+                <br>
+
+                The real game is of motivation and rewards, These both are connected to each other as the graph
+                of
+                motivation sets out the rewards you gonna get in future and present.
+                You cannot rely on long-term consequences and rewards to motivate the Present Self. Instead, you
+                have
+                to
+                find a way to move future rewards and punishments into the present moment. You have to make the
+                future
+                consequences become present consequences.
+
+
+                <br>
+                <br>
+                "It's better to do the task rather than thinking about it which causes stress, Anxiety and much
+                more"
+                The guilt, shame, and anxiety that you feel while procrastinating are usually worse than the
+                effort
+                and
+                energy you have to put in while you're working. The problem is not doing the work, it's starting
+                the
+                work.
+
+                If you can find a way to make the benefits of long-term choices more immediate, then it becomes
+                easier
+                to avoid procrastination. One of the best ways to bring future rewards into the present moment
+                is
+                with
+                a
+                strategy known as temptation bundling.
+                <br>
+                The basic format is: Only do <b>[THING YOU LOVE] while doing [THING YOU PROCRASTINATE ON]</b>
+                Here are a few common examples of temptation bundling:
+
+                Only listen to audiobooks or podcasts you love while exercising, Get a pedicure while processing
+                overdue
+                work emails, Watch your favourite show while ironing or doing household chores.
+                <br>
+                <br>
+                <p class="container fw-bold text-center">
+                  Follow the above-mentioned points and say bye-bye to procrastination!
+                </p>
+                
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <section id="start-blog" class="start-blog" style="background: linear-gradient(to bottom, #ffffff 0%, #50b8c6 100%);">
+
+        <hr class="featurette-divider bg-light">
+
+        <div class="container row featurette">
+          <div class="col-md-5 order-md-2">
+            <img src="{% static 'ITEMS/steppingout.png' %}" class="responsive-img " alt="img">
+          </div>
+
+          <div class="col-md-7 order-md-1">
+            <br></br>
+            <h2 class="featurette-heading">It's All About to Start, A Journey Begins with a Step!</h2>
+            <p>
+              <br>
+              We often think a lot about ideas and strategies to achieve a goal, but sometimes we fail to accomplish
+              it...
+              why? The answer lies here:
+              <b class="fw-bold" style="font-family: Times New Roman;">The problem is not in the strategy, but in the
+                determination to achieve the goal.</b>
+              We tend to create schedules and routines that we rarely follow for more than a few days. The root cause is
+              often "Dopamine."
+
+              Whenever we engage in a pleasant activity, our brain releases a happy hormone called Dopamine.
+
+              <b style="font-family: Times New Roman;">Engaging in highly enjoyable activities leads to an automatic
+                increase in dopamine levels. If this pattern persists, it can lead to "Dopamine Intolerance."</b>
+              Your brain becomes accustomed to higher dopamine levels and starts demanding activities that trigger
+              significant dopamine release.
+
+              The solution lies in a healthy activity that stimulates dopamine release: <b class="fw-bold"
+                style="font-family: Times New Roman;">Exercise.</b>
+              Establishing an exercise routine may be challenging, but taking that initial step will pave the way for
+              unstoppable progress towards your goals.
+              <br>
+              <a href="#" class="btn btn-dark" style="text-decoration: none;">Read More...</a>
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <div class="container row featurette">
+          <div class="col-md-7 order-2">
+            <br>
+            <h1 class=" text-dark text-center" style="font-family: flix;">Ask than
+              Assume.
+            </h1>
+            <h5 class="text-white text-center px-5">"It is better to ask than to assume."</h5>
+            <br>
+            <p class="text-dark" style="font-family: verdana;">Have you ever experienced misunderstandings
+              that
+              have the potential to destroy your relationships? The simple solution is to "Just ask." Many strong
+              relationships have shattered due to misunderstandings. By adhering to a simple rule—when something isn't
+              clear, ask—you can eliminate confusion and make significant progress. Avoid making assumptions or guesses.
+              Swallow your pride and say, "I'm not sure I understand. Can you explain?"
+
+              This straightforward approach can spare you embarrassment, time, and money. More importantly, it could
+              salvage one of the most important relationships in your life.
+              <br>
+              <a href="#" class="btn btn-dark" style="text-decoration: none;">Read More...</a>
+            </p>
+          </div>
+          <div class="col-md-5 mt-lg-5 order-1">
+            <img src="{% static 'ITEMS/think.jpg' %}" class="responsive-img" alt="...">
+          </div>
+        </div>
+
+      </section>
+
+{% comment %} below section is the techdive {% endcomment %}
+{% comment %} below section is the techdive {% endcomment %}
+{% comment %} below section is the techdive {% endcomment %}
+<section id="tech-dive">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Tech Dive</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown" style="margin-right:5rem">
+                      <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categories
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                        <li><a class="dropdown-item text-dark navicons" href="#tech-topic1">Artificial Intelligence</a></li>
+                        <li><a class="dropdown-item text-dark navicons" href="#tech-topic2">Metaverse</a></li>
+                        <li><a class="dropdown-item text-dark navicons" href="#tech-topic3">BlockChain</a></li>
+                        <li><a class="dropdown-item text-dark navicons" href="#tech-topic4">Internet of things</a></li>
+                        <li><a class="dropdown-item text-dark navicons" href="#tech-topic5">Mixed reality</a></li>
+                        
+                          <!-- Add more categories here -->
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="{% static 'ITEMS/artifical intelligence.jpg' %}" alt="Tech Topic 1 Image" class="img-fluid">
+      </div>
+      <br>
+          <div class="col-lg-6">
+              <h2 id="tech-topic1">Artficial Intelligence</h2>
+              <p>AI is the main force of the fourth scientific and technological revolution,
+                which is dedicated to
+                embodying human intelligence through computational methods. It is widely used in various fields and
+                currently mainly possesses functions such as voice and image recognition, logical reasoning ability, and
+                emotion recognition</p>
+                <p style="font-family:serif">If your all fingers are in python then this is for you.
+                  Explore the world of artificial intelligence because recent researches clearly show the future of AI.
+                  So Just deep dive into the real but artifical world....</p>
+                <a href="https://www.aitrends.com/" class="btn btn-dark">Read More..</a>
+                <a href="" class="btn btn-dark">Read More..</a>
+          </div>
+          
+      </div>
+      <hr class="text-dark">
+      <div class="row">
+          <div class="col-lg-6">
+              <img src="{% static 'ITEMS/metaverse.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
+          </div>
+          <br>
+          <div class="col-lg-6">
+              <h2 id="tech-topic2">Metaverse</h2>
+              <p>What is the Metaverse?
+                The metaverse is a shared 3D virtual world in which you can socialize, collaborate, learn, and play.
+  
+                When discussing the metaverse, it is important to make a distinction between “a metaverse” and “The
+                Metaverse.”
+  
+                The distinction has to do with control.
+  
+                A metaverse can be created by any organization whose goal is to create this 3D virtual environment/world.</p>
+                <p style="font-family:serif">There has been a significant rise in searches for “metaverse” after Facebook’s
+                  Connect Keynote 2021
+                  presentation where Mark Zuckerberg, CEO of Facebook, shared his vision of the metaverse, along with their
+                  parent company’s name change to Meta.....</p>
+                  <a href="https://about.meta.com/what-is-the-metaverse/" class="btn btn-dark">Read More..</a>
+          </div>
+          
+      </div>
+      <hr class="text-dark">
+      <!-- Add more rows for additional tech topics -->
+      <div class="row">
+          <div class="col-lg-6">
+              <img src="{% static '/ITEMS/blockchain.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
+          </div>
+          <br>
+          <div class="col-lg-6">
+              <h2 id="tech-topic3">Blockchain</h2>
+              <p>Blockchain is a group of blocks that are connected, each block to the one
+                before. The first block is
+                called the "Genesis" block and it is hard coded into the software.This technology was introduced to solve
+                the double spending problem in Bitcoin(A cryptocurrency introduced by Satoshi Nakamoto in 2008 which is a
+                fully digital and decentralized cryptocurrency)</p>
+              <p style="font-family:serif">To understand how blockchain works, we will first explain how a blockchain
+                network works. This is a set
+                of nodes that operate and interact on the same network using the replicated blockchain copy each node
+                holds.....</p>
+                <br>
+                <a target="_blank"
+                href="https://academy.binance.com/en/glossary/blockchain?utm_campaign=googleadsxacademy&utm_source=bing_ads&utm_medium=cpc&ref=TDJYLZ1Y&&msclkid=ddd8c378975815356e4aa067aa7dc31d&gclid=ddd8c378975815356e4aa067aa7dc31d&gclsrc=3p.ds"
+                class="btn btn-dark">Read More..</a>
+    
+          </div>
+          
+      </div>
+      <hr class="text-dark">
+      <!-- Add more rows for additional tech topics -->
+      <div class="row">
+            <div class="col-lg-6">
+              <img src="{% static 'ITEMS/IOT.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
+          </div>
+          <br>
+          <div class="col-lg-6">
+              <h2 id="tech-topic4">IOT( Internet of Things )</h2>
+              <p>
+              Internet of Things (IoT) is the networking of physical objects that contain
+                electronics embedded within
+                their architecture in order to communicate and sense interactions amongst each other or with respect to
+                the external environment or "IoT is network of interconnected computing devices which are embedded in
+                everyday objects, enabling them to send and receive data"</p>
+              <p style="font-family:serif">One of the most interesting characteristics of IoT devices is that they are
+                able to produce large amounts
+                of data. This can be particularly used in applications such as Artificial Intelligence and Machine
+                Learning.
+  
+                Most of IoT devices can produce in fact a great variety of Time Series data which are of huge interest in
+                Artificial Intelligence....</p>
+                <br>
+                <a target="_blank"
+                href="https://www.educba.com/introduction-to-iot/#:~:text=Internet%20of%20things%20or%20IoT%20is%20a%20system,share%20data%20with%20other%20devices%20over%20the%20internet."
+                class="btn btn-dark">Read More..</a>
+          </div>
+          
+      </div>
+      <hr class="text-dark">
+      <!-- Add more rows for additional tech topics -->
+        <div class="row"> 
+          <div class="col-lg-6">
+            <img src="{% static 'ITEMS/mixed reality.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
+        </div>
+        <br>
+
+          <div class="col-lg-6">
+              <h2 id="tech-topic5">Mixed Reality(MR)</h2>
+              <p style="font-family:serif">Mixed Reality (MR) combines both Augmented Reality and Virtual Reality. Mixed
+                Reality allows you to
+                immerse yourself in the simulated world around you to interact with a virtual environment. Mixed Reality
+                (MR) merges both real and virtual entities to produce new environments, where physical and digital
+                interact in real-time.</p>
+              <p style="font-family:serif">Mixed reality is usually a headset-based experience, similar to virtual
+                reality. Alternatively, AR often
+                comes from a flatscreen like a tablet or a smartphone. Mixed Reality experiences consider the geometry of
+                the environment around you, using it as a canvas to create immersive content that’s influenced by the
+                space, you’re in..</p>
+                <br>
+              <a target="_blank" href="https://docs.microsoft.com/en-us/training/modules/intro-to-mixed-reality/"
+                class="btn btn-dark">Read More..</a>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+
+      <section>
+        <div class="message">
+          <p class="text-center text-light p-3">Touch right below this section to read something</p>
+        </div>
+        <div class=" d-flex">
+          <div class="card-p">
+            <div class="clip-path">
+              <p>Thank-you so much for visiting our website:)</p>
+              
+              <p class="content-p">
+                This website is all about to tackle the inquisitiveness of an student. Moreover, it
+                provides full to fit solutions to the problems related to notes and provides tech-articles which not
+                only
+                make you updated with the technologies but also ehances your confidence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <hr class="featurette-divider">
+      <footer id="dk-footer" class="dk-footer" style="width:100%">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-4">
+              <div class="dk-footer-box-info">
+                <a href="#" class="footer-logo">
+                  <img src="{% static 'ITEMS/notesicon.png' %}" width="70" height="70" alt="footer_logo" class="img-fluid">
+                </a>
+                <span class="inline">
+                  <h3 class="text-white fw-bold" style="font-family:serif">NERDY</h3>
+                </span>
+
+                <p class="footer-info-text text-white fw-bold">
+                  “Literacy is a bridge from misery to hope. Reading is a way to expand the mind, open the eyes,
+                  and
+                  fill
+                  up
+                  the heart.”
+                </p>
+                <div class="footer-social-link">
+                  <h3>Follow us</h3>
+                  <ul>
+                    <li>
+                      <a target="_blank" href="https://www.facebook.com/profile.php?id=100009454452522">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a target="_blank" href="mailto: Abhaycbr07@gmail.com">
+                        <i class="fa fa-google-plus"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://www.linkedin.com/in/abhay-kumar-6586b220a/">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://www.instagram.com/abhay.sahil/">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="contact-us">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="contact-us contact-us-last">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="footer-widget ">
+                    <div class="section-heading">
+                      <h3>Useful Links</h3>
+                      <span class="animate-border "></span>
+                    </div>
+                    <ul>
+                      <li class="navicons"><a class="item " href="#section8">Blogs</a></li>
+                      <li class="navicons">
+                        <a href="mailto: 200106015@hbtu.ac.in">Submit Your Blog</a>
+                      </li>
+                      <li class="navicons">
+                        <a href="{% url 'about' %}">About Author</a>
+                      </li>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <div class="footer-widget">
+                    <div class="section-heading">
+                      <h3>Subscribe</h3>
+                      <span class="animate-border "></span>
+                    </div>
+                    <p class="text-white"> Don’t miss to subscribe to our new feeds, kindly fill the form below.
+                      .</p>
+                    <form id="subscribe-form">
+                      <div class="form-row">
+                        <div class="col dk-footer-form">
+                          <input type="email" class="form-control" id="email" placeholder="Email Address"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            style="color:yellow">
+                          <button type="submit">
+                            <i class="fa fa-send"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <p class="error-message" id="error-message" style="color:red"></p>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p style="font-family:Times">© 2023 Nerdy, @AbhayKumar</p>
+        </div>
+  </div>
+  <!-- Google Form Response Alert -->
+  </footer>
+  </section>
+  </div>
+
+
+  <script src="{% static 'index.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

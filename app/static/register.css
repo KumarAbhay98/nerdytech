@@ -1,0 +1,91 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #cfd30d, #0c15b4, #c4c70f, #0d2196);
+  background-size: 400% 400%;
+  animation: animateBg 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* show-btnns */
+/* Custom styles for "Show" buttons */
+.input-group-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.input-group-button i {
+  font-size: 1.25rem;
+  color: #adc419;
+}
+
+.input-group-button:focus {
+  outline: none;
+}
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ffa000;
+}
+
+a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .card {
+    border-radius: 0;
+  }
+}
