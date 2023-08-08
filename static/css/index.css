@@ -180,7 +180,7 @@ body {
 
   .animate-character {
     font-size: 5.4rem;
-    
+
     margin-top: 0rem;
     margin-bottom: -1.4rem;
     font-family: Nuninto, sans-serif;
@@ -205,16 +205,20 @@ body {
 /* tackle-ur-problems-card */
 .tackle {
   text-align: center;
-  background-color: #c6a220;
+  background:none;
   font-size: 50px;
   padding: 2rem 2rem;
   text-transform: uppercase;
   color: #fff;
   word-spacing: 4px;
 }
+.tackle h3{
+    font-size:3rem;
+    text-shadow:2px 2px 5px #c6a220;
+}
 .tackle:hover {
   text-align: center;
-  background-color: #c6a220;
+  background:none;
   font-size: 50px;
   padding: 55px;
 }
@@ -222,26 +226,35 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 80px;
-  background: linear-gradient(#c6a220, white);
 }
 .card {
-  box-shadow: 4px 4px 3px solid black;
+  box-shadow: 2px 2px 10px blue;
   margin-top: 20px;
   cursor: pointer;
 }
 .card:hover {
   transition: 0.5sec;
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(30, 68, 138, 0.863),
     0 4px 8px rgba(202, 194, 219, 0.858);
 }
+.assume{
+      padding:0rem 7rem;
+}
 @media (max-width: 576px) {
   .tackle {
-    font-size: 20px;
-    padding: 2rem 2rem;
+    font-size:3rem;
+    color:blue;
+    padding: 0rem 2rem;
   }
   .card-set {
     padding: 1rem 1rem;
+  }
+  .tackle h3{
+      font-size:1.5rem;
+  }
+  .assume{
+      padding:0rem 1.2rem;
   }
 }
 
@@ -372,17 +385,33 @@ body {
 /* start-blog */
 /* start-blog */
 #start-blog .container {
-  padding: 2rem 5rem;
+  padding: 1rem 7rem;
 }
-.containers {
-  padding: 2rem 7rem;
+#procrast .container {
+  padding:1rem 7rem;
+}
+@media (max-wdith: 768px){
+    #start-blog .container {
+        text-align:center;
+        padding:1rem 7rem;
+    }
+    #procrast .container{
+        text-align:center;
+        padding-top:1rem;
+        padding-bottom:1rem;
+        padding-left:4rem;
+        padding-right:1rem;
+
+    }
 }
 @media (max-width: 578px) {
-  #start-blog .container {
-    padding: 1.2rem 0.2rem;
+    #start-blog .container {
+        padding-left: 2rem;
+        padding-right: 0.8rem;
   }
-  .containers {
-    padding: 0.4rem 1.2rem;
+    #procrast .container{
+        padding-left: 2rem;
+        padding-right: 0.8rem;
   }
 }
 
@@ -392,7 +421,7 @@ body {
 /* techdive */
 /* Custom styling for the Tech Dive section */
 #tech-dive {
-  background-color: #c6a220; /* Yellow background */
+  background:none; /* Yellow background */
   padding: 50px 0; /* Improved padding */
 }
 
@@ -431,6 +460,7 @@ body {
 #tech-dive .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-top:2rem;
   border: 5px solid #0057b8; /* Blue border */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Black shadow */
 }
@@ -464,7 +494,7 @@ body {
   }
 
   #tech-dive .img-fluid {
-    border: none; /* Remove border for smaller screens */
+    border: 2px solid blue; /* Remove border for smaller screens */
     box-shadow: none; /* Remove shadow for smaller screens */
   }
   #tech-dive .container {
@@ -474,8 +504,9 @@ body {
 @media (max-width: 578px) {
   #tech-dive .container {
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 0.8rem;
   }
+
 }
 
 /* Touch-below card css */

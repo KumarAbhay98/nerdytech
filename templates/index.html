@@ -15,6 +15,81 @@
   <link rel="apple-touch-icon" type="image/png" href="/icon.png" />
   <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
   <title>Nerdy</title>
+      <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+        @media (max-width: 576px) {
+            .container {
+                text-align: center;
+            }
+            img {
+                max-width: 100%;
+                border: 5px solid blue;
+                box-shadow: 0px 0px 10px blue;
+                margin: 0 auto;
+            }
+            .col-md-12, .col-lg-12, .col-sm-12 {
+                width: 100%;
+            }
+            h2.featurette-heading, h4.featurette-heading {
+                font-size: 24px;
+            }
+            p.lead {
+                font-size: 16px;
+            }
+            .container.text-center {
+                font-size: 20px;
+            }
+        }
+
+        /* Media query for medium screens */
+        @media (min-width: 577px) and (max-width: 992px) {
+            .container {
+                text-align: left;
+            }
+            img {
+                max-width: 100%;
+                border: 5px solid blue;
+                box-shadow: 0px 0px 10px blue;
+                margin: 20px auto;
+            }
+            h2.featurette-heading, h4.featurette-heading {
+                font-size: 28px;
+            }
+            p.lead {
+                font-size: 18px;
+            }
+            .container.text-center {
+                font-size: 22px;
+            }
+            #start-blog .container{
+                padding:1rem 7rem;
+            }
+        }
+
+        /* Media query for large screens */
+        @media (min-width: 993px) {
+            .container {
+                text-align: left;
+            }
+            img {
+                max-width: 100%;
+                border: 5px solid blue;
+                box-shadow: 0px 0px 10px blue;
+                margin: 20px auto;
+            }
+            h2.featurette-heading, h4.featurette-heading {
+                font-size: 32px;
+            }
+            p.lead {
+                font-size: 20px;
+            }
+            .container.text-center {
+                font-size: 24px;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -22,8 +97,6 @@
     <div class="bgg"></div>
     <div class="bgg bg2"></div>
     <div class="bgg bg3"></div>
-
-
 
     <!-- har ghar tiranga -->
     <div class="tiranga">
@@ -33,14 +106,12 @@
         <span class="mahotsav fw-bold">Mahotsav</span>
       </a>
     </div>
-   
-
 
     <!-- Navgation bar -->
     <nav class="navbar navbar-expand-lg mx-3 fixed-top" >
       <div class="container-fluid mx-2">
         <a class="navbar-brand" href="Index.html">
-          <img src="{% static '/assets/notesicon.png'%}" 
+          <img src="{% static '/assets/notesicon.png'%}"
           class="img-fluid" width="40" height="40" style="margin-top: -13px"
           alt="Nerdy Logo">
           <span class="nav-brand">Nerdy</span>
@@ -72,7 +143,7 @@
             </li>
             <li class="nav-item">
               <a  class="nav-link" href="{% url 'logout' %}" style="color:#ffc107">Logout</a>
-              
+
             </li>
           </ul>
         </div>
@@ -106,7 +177,7 @@
 
 
     <!-- carousel -->
-    <div class="border-black" style="background-color: #ffffff4f;">
+    <div class="border-black" style="background-color: ##c6a220;">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -194,17 +265,17 @@
     </div>
 
     <!-- set of four cards -->
-    <section class="big-box" style="background-color:#c9cf12" id="section6" style="padding-bottom:10px;">
+    <section class="big-box" style="background-color:none" id="section6" style="padding-bottom:10px;">
 
       <!-- free yourself from procrastination card-->
       <div>
-        <h1 class="tackle" style="font-family:gill">Tackle your own problems...</h1>
+        <h3 class="tackle" style="font-family:gill">Tackle your own problems</h3>
         <div class="container">
           <section class="card-set">
             <div class="row">
               <div class="col-sm-12 col-lg-6">
                 <div class="card">
-                  <div class="card-body text-dark fw-bold" style="background-color:#b80f0f">
+                  <div class="card-body text-white fw-bold" style="background-color:#631010e5">
                     <h5 class="card-title">Lack of Motivation...</h5>
                     <p class="card-text text-white" style="font-family:Lucida Sans">
                       There are also such students in large quantity who pay no care and attention towards attending
@@ -215,8 +286,6 @@
                       and
                       when they wake up and starts realizing then they came to know that it is too late. So, it is the
                       duty of a teacher and administrator to motivate the students.
-
-
                     </p>
                     <a target="_blank" href="https://www.choosingtherapy.com/lack-of-motivation/"
                       class="btn btn-dark">Read More...</a>
@@ -226,8 +295,9 @@
 
               <div class="col-sm-12 col-lg-6">
                 <div class="card">
-                  <div class="card-body text-dark fw-bold" class="container" style="background-color:#cade13">
+                  <div class="card-body text-white fw-bold" class="container" style="background-color:#605c10e5">
                     <h5 class="card-title">Low Self-Esteem and Academic Performance...</h5>
+
                     <p class="card-text text-white" style="font-family:Lucida Sans">
                       Researchers have conducted research and evaluated effects of self-esteem and academic performance.
                       Many behavioral and educational problems arise due to low self-esteem. In educational institutes,
@@ -242,10 +312,11 @@
                 </div>
               </div>
             </div>
-            <div class="row mb-4">
+            <div class="row">
               <div class="col-sm-12 col-lg-6">
                 <div class="card">
-                  <div class="card-body text-dark fw-bold" class=" container" style="background-color:#120b96">
+                    <div class="card-body text-white fw-bold" class=" container" style="background-color:#1f1989e5">
+                    <br>
                     <h5 class="card-title">Relationship of Depression and Students’ Learning...</h5>
                     <p class="card-text text-white" style="font-family:Lucida Sans">
                       Studies have examined the connection between depression and students’ academic performance. There
@@ -256,18 +327,16 @@
                       leads to low performance while normal depression does not have a negative effect on students’
                       grades. Results suggest that there is a need to take preventive measures so that depression among
                       students can be reduced.
-
-
                     </p>
                     <a target="_blank" href="https://psychcentral.com/depression/depression-in-students"
                       class="btn btn-dark">Read More...</a>
-                  </div>
+                    </div>
                 </div>
               </div>
-              <br>
               <div class="col-sm-12 col-lg-6">
                 <div class="card">
-                  <div class="card-body text-dark fw-bold" class="container" style="background-color:#cd157d">
+                    <div class="card-body text-white fw-bold" class="container" style="background-color:#79184fe5">
+                    <br>
                     <h5 class="card-title">Failing To Manage Money...</h5>
                     <p class="card-text text-white" style="font-family:Lucida Sans">
                       Most of the college students have the issues to manage money, as they are not able to manage the
@@ -278,18 +347,16 @@
                       the financial goals because they never knew the value of money or that the money is important in
                       the
                       future, they can make goal permanent.
-
-
                     </p>
                     <a target="_blank"
                       href="https://www.rasmussen.edu/student-experience/college-life/money-management-tips-for-college-students/"
                       class="btn btn-dark">Read More...</a>
-                  </div>
+                    </div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="accordian-p">
+          <section class="accordian-p" style="background:none">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -710,6 +777,7 @@
         </div>
       </div>
     </section>
+
     <section class="container-fluid mt-0">
       <div class="container">
         <div class="row gx-8 justify-content-around">
@@ -744,38 +812,36 @@
     <section id="section8" style="background: none;">
       <div>
         <div class="row p-5">
-          <div class="col-lg-7 col-sm-12 col-md-12">
-            <h1 class="fw-bold text-white" style="font-family: flix;">Welcome to Our Blogs</h1>
+            <div class="col-lg-5 col-sm-12 col-md-12 mt-4">
+            <img src="{% static 'assets/blog.png'%}" class="img-fluid responsive-img" alt="Blogs Image">
+            </div>
+            <div class="col-lg-7 col-sm-12  col-md-12">
+            <h1 class="fw-bold text-white" mt-sm-2 style="font-family: flix;">Welcome to Our Blogs</h1>
+            <br>
             <p class="lead text-dark">As we near the end of this website, you might wonder if you've seen it all.
               However, the journey continues with a collection of fascinating blogs awaiting you on our next page. The
               more
               you read, the more knowledge you'll gain and soon my another wordpress website will also be live called 'witchats'</p>
             <div>
-              <a href="#section9" type="button" class="btn btn-outline-dark btn-lg px-4">Explore Blogs</a>
+                <br>
+              <a href="#section9" type="button" class="btn btn-outline-dark btn-sm px-4 text-sm-center ">Explore Blogs</a>
             </div>
           </div>
-          <div class="col-lg-5 col-sm-12 col-md-12 mt-4 mt-lg-0">
-            <img src="{% static 'assets/blog.png'%}" class="img-fluid responsive-img" alt="Blogs Image">
-          </div>
+
         </div>
       </div>
     </section>
-
-    <section class="containers start-blog" style="background-color:#b7d50b">
-        <div class="col-md-5 col-lg-5 col-sm-12">
-          <img
-            src="{% static 'assets/procrastination.png' %}"
-            class="img-fluid" alt="Procrastination Image">
+    <section id="procrast" class="start-blog">
+        <div class="container col-md-12 col-lg-5 col-sm-12" style="display:flex;justify-content:center">
+            <img src="{% static 'assets/procrastination.png' %}" class="img-fluid" alt="Procrastination Image">
         </div>
         <br>
-        <div class="container-fluid row featurette">
-          <div class="col-md-7 col-lg-12 col-sm-12" style="padding-left: 0;">
-            <h3 class="featurette-heading py-2 text-dark" style="font-family: 'flix', sans-serif;">
-              “My mother always told me I wouldn’t amount to anything because I procrastinate. I said, ‘just wait.’ I
-              started improving day-by-day.”
-            </h3>
-            <p class="text-dark" style="font-family: 'verdana', sans-serif;">
-              Procrastination is a challenge we have all faced at one point or another. For as long as humans have been
+        <div class="container  row featurette">
+            <div class="col-md-12 col-lg-12 col-sm-12" style="padding-left: 0;">
+                <h2 class="featurette-heading py-2 text-dark" style="font-family: 'flix', sans-serif;">“My mother always told me I wouldn’t amount to anything because I procrastinate. I said, ‘just wait.’ I
+              started improving day-by-day."</h2>
+                <br>
+                <p class="lead text-dark" style="font-family: 'verdana', sans-serif;">Procrastination is a challenge we have all faced at one point or another. For as long as humans have been
               around, we have been struggling with delaying, avoiding, and procrastinating on issues that are important
               to
               us.
@@ -789,23 +855,25 @@
               following through on what you set out to do.
               <br>
               <br>
-              <br>
 
-              "Time Inconsistency" is a phenomenon revealed by research called "Behavioural psychology" which
+
+              "Time Inconsistency" is a phenomenon revealed by research called <b>"Behavioural psychology"</b> which
               helps
               explain why procrastination seems to pull us in despite our good intentions.
-              Time inconsistency refers to the tendency of the human brain to value immediate rewards more
+              <br>
+              <b>Time inconsistency refers to the tendency of the human brain to value immediate rewards more
               highly
               than
-              future rewards.
+              future rewards.</b>
+              <br><br>
 
-              <span class="text-dark" style="font-family:verdana" , Times, serif>
-                After understanding the topic called "Procrastination" it's time to look into the ways of
+              <span class="lead text-dark" style="font-family:verdana" , Times, serif>
+                After understanding the topic called <b>"Procrastination"</b> it's time to look into the ways of
                 safeguarding
                 yourself from this.
-                <br>
+                <br><br>
 
-                The real game is of motivation and rewards, These both are connected to each other as the graph
+                <b>The real game is of motivation and rewards</b>, These both are connected to each other as the graph
                 of
                 motivation sets out the rewards you gonna get in future and present.
                 You cannot rely on long-term consequences and rewards to motivate the Present Self. Instead, you
@@ -818,14 +886,16 @@
 
                 <br>
                 <br>
-                "It's better to do the task rather than thinking about it which causes stress, Anxiety and much
-                more"
-                The guilt, shame, and anxiety that you feel while procrastinating are usually worse than the
+                "It's better to do the task rather than thinking about it which causes <b>stress, Anxiety and much
+                more</b>"<br>
+
+                <b>The guilt, shame, and anxiety</b> that you feel while procrastinating are usually <b>worse than the
                 effort
                 and
-                energy you have to put in while you're working. The problem is not doing the work, it's starting
+                energy you have to put in while you're working.</b> The problem is not doing the work, it's starting
                 the
                 work.
+                <br>
 
                 If you can find a way to make the benefits of long-term choices more immediate, then it becomes
                 easier
@@ -834,8 +904,8 @@
                 with
                 a
                 strategy known as temptation bundling.
-                <br>
-                The basic format is: Only do <b>[THING YOU LOVE] while doing [THING YOU PROCRASTINATE ON]</b>
+                <br><br>
+                The basic format is: Only do <br><b>[THING YOU LOVE] <br>while doing [THING YOU PROCRASTINATE ON]</b><br><br>
                 Here are a few common examples of temptation bundling:
 
                 Only listen to audiobooks or podcasts you love while exercising, Get a pedicure while processing
@@ -846,87 +916,115 @@
                 <p class="container fw-bold text-center">
                   Follow the above-mentioned points and say bye-bye to procrastination!
                 </p>
-                
-            </p>
-          </div>
-
+                </p>
+            </div>
         </div>
-      </section>
+        <!-- Rest of the content for this section -->
+    </section>
 
-
-
-      <section id="start-blog" class="start-blog" style="background: linear-gradient(to bottom, #ffffff 0%, #50b8c6 100%);">
-
+    <section id="start-blogs" class="start-blog">
         <hr class="featurette-divider bg-light">
-
         <div class="container row featurette">
-          <div class="col-md-5 order-md-2">
-            <img src="{% static 'assets/steppingout.png' %}" class="responsive-img " alt="img">
-          </div>
-
-          <div class="col-md-7 order-md-1">
-            <br></br>
-            <h2 class="featurette-heading">It's All About to Start, A Journey Begins with a Step!</h2>
-            <p>
+            <div class="col-md-12 col-sm-12 col-lg-5 mt-lg-5 order-1">
+                <img src="{% static 'assets/steppingout.png' %}" class="responsive-img " alt="img">
+            </div>
+            <div class="col-md-12 col-lg-7 col-sm-12 order-2">
+                <br></br>
+                <h2 class="featurette-heading">It's All About to Start, A Journey Begins with a Step!</h2>
+                <p>
               <br>
               We often think a lot about ideas and strategies to achieve a goal, but sometimes we fail to accomplish
               it...
               why? The answer lies here:
+              <br><br>
               <b class="fw-bold" style="font-family: Times New Roman;">The problem is not in the strategy, but in the
-                determination to achieve the goal.</b>
+                determination to achieve the goal.</b><br>
               We tend to create schedules and routines that we rarely follow for more than a few days. The root cause is
-              often "Dopamine."
+              often "Dopamine".
 
-              Whenever we engage in a pleasant activity, our brain releases a happy hormone called Dopamine.
+              Whenever we engage in a pleasant activity, our brain releases a happy hormone called Dopamine.<br><br>
 
               <b style="font-family: Times New Roman;">Engaging in highly enjoyable activities leads to an automatic
                 increase in dopamine levels. If this pattern persists, it can lead to "Dopamine Intolerance."</b>
               Your brain becomes accustomed to higher dopamine levels and starts demanding activities that trigger
               significant dopamine release.
 
-              The solution lies in a healthy activity that stimulates dopamine release: <b class="fw-bold"
+              The solution lies in a healthy activity that stimulates dopamine release:<br>  <b class="fw-bold"
                 style="font-family: Times New Roman;">Exercise.</b>
               Establishing an exercise routine may be challenging, but taking that initial step will pave the way for
               unstoppable progress towards your goals.
               <br>
-              <a href="#" class="btn btn-dark" style="text-decoration: none;">Read More...</a>
+              <br>
+              <a href="https://dev.to/kumarabhay98/setting-sail-on-a-quest-the-first-step-to-unraveling-the-world-of-learning-and-coding-c1j" class="btn btn-dark" style="text-decoration: none;">Read More...</a>
             </p>
-          </div>
+            </div>
         </div>
         <br>
+        <div class="container assume row featurette">
+            <div class="col-md-12 col-lg-12 col-sm-12  order-2">
+                <br>
+                <h1 class=" featurette-heading" style="font-family: flix;">Ask than Assume.</h1>
+                <h5 class="featurette-heading">"It is better to ask than to assume."</h5>
+                <br>
+            <p class="lead text-dark" style="font-family: verdana;">Effective Communication : The power of asking<br>
+            <p>Have you ever found yourself entangled in misunderstandings that have the potential to unravel even the
+            strongest of relationships? At times, the simple solution is to "Just ask." The foundation of many
+            relationships has crumbled due to misconceptions and misinterpretations. But by adhering to a seemingly
+            simple rule — when something isn't clear, ask — you can dissolve confusion and foster meaningful progress.</p><br>
 
-        <div class="container row featurette">
-          <div class="col-md-7 order-2">
-            <br>
-            <h1 class=" text-dark text-center" style="font-family: flix;">Ask than
-              Assume.
-            </h1>
-            <h5 class="text-white text-center px-5">"It is better to ask than to assume."</h5>
-            <br>
-            <p class="text-dark" style="font-family: verdana;">Have you ever experienced misunderstandings
-              that
-              have the potential to destroy your relationships? The simple solution is to "Just ask." Many strong
-              relationships have shattered due to misunderstandings. By adhering to a simple rule—when something isn't
-              clear, ask—you can eliminate confusion and make significant progress. Avoid making assumptions or guesses.
-              Swallow your pride and say, "I'm not sure I understand. Can you explain?"
+            <p>It's human nature to jump to conclusions or fill in gaps when things are unclear. However, this habit can
+            lead to inaccuracies and unnecessary complications. Rather than making assumptions or relying on guesses,
+            the act of asking can be the remedy. It's an act of humility and wisdom that goes a long way in building
+            bridges of understanding.</p><br>
 
-              This straightforward approach can spare you embarrassment, time, and money. More importantly, it could
-              salvage one of the most important relationships in your life.
-              <br>
-              <a href="#" class="btn btn-dark" style="text-decoration: none;">Read More...</a>
+            <h4>The Art of Seeking Clarity</h4><br>
+
+            <p>Imagine a scenario where a friend's behavior confuses you. Rather than letting your mind wander down a path of
+            assumptions, take a moment to reach out. A simple, "I'm not sure I understand. Can you explain?" can work
+            wonders. This straightforward approach not only clarifies the situation but also shows your commitment to
+            open and honest communication.</p><br>
+
+            <p>Effective communication isn't just about speaking; it's about listening, comprehending, and responding with
+            sincerity. By seeking clarity, you pave the way for productive conversations, healthier relationships, and
+            a more harmonious environment.</p><br>
+
+            <h4>Breaking Down Barriers</h4><br>
+
+            <p>Asking questions isn't a sign of weakness; it's a display of courage. It demonstrates your willingness to
+            confront uncertainties head-on rather than allowing them to fester. This mindset extends beyond personal
+            relationships and into the professional realm. In a workplace where assumptions can lead to costly mistakes,
+            asking questions can save time, money, and reputation.</p><br>
+
+            <p>Breaking down barriers through effective communication leads to improved collaboration and innovation. When
+            people feel comfortable asking for clarification, new ideas can flourish, and problem-solving becomes more
+            robust.</p><br>
+
+            <h4>The Road to Resolution</h4><br>
+
+            <p>In disputes or conflicts, asking the right questions can help you navigate the intricacies of the situation.
+            Instead of assigning blame or making unfounded judgments, you're opening a dialogue that aims at
+            understanding the root cause. This approach fosters empathy and facilitates finding a common ground for
+            resolution.</p><br>
+
+            <p>Remember, the choice to ask stems from a place of respect. It shows that you value the relationship enough to
+            seek the truth rather than making hasty assumptions. So, the next time you find yourself in a puzzling
+            situation, embrace the power of asking. You'll find that the path to clarity and connection is paved with
+            questions.</p>
             </p>
-          </div>
-          <div class="col-md-5 mt-lg-5 order-1">
-            <img src="{% static 'assets/think.jpg' %}" class="responsive-img" alt="...">
-          </div>
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12  order-1">
+                <img src="{% static 'assets/think.jpg' %}" class="responsive-img" alt="...">
+            </div>
         </div>
+     </section>
 
-      </section>
+
+
 
 {% comment %} below section is the techdive {% endcomment %}
 {% comment %} below section is the techdive {% endcomment %}
 {% comment %} below section is the techdive {% endcomment %}
-<section id="tech-dive">
+ <section id="tech-dive">
   <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">Tech Dive</a>
@@ -945,7 +1043,7 @@
                         <li><a class="dropdown-item text-dark navicons" href="#tech-topic3">BlockChain</a></li>
                         <li><a class="dropdown-item text-dark navicons" href="#tech-topic4">Internet of things</a></li>
                         <li><a class="dropdown-item text-dark navicons" href="#tech-topic5">Mixed reality</a></li>
-                        
+
                           <!-- Add more categories here -->
                       </ul>
                   </li>
@@ -959,7 +1057,7 @@
           <img src="{% static 'assets/artifical intelligence.jpg' %}" alt="Tech Topic 1 Image" class="img-fluid">
       </div>
       <br>
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="margin-top:0.5rem">
               <h2 id="tech-topic1">Artficial Intelligence</h2>
               <p>AI is the main force of the fourth scientific and technological revolution,
                 which is dedicated to
@@ -969,10 +1067,11 @@
                 <p style="font-family:serif">If your all fingers are in python then this is for you.
                   Explore the world of artificial intelligence because recent researches clearly show the future of AI.
                   So Just deep dive into the real but artifical world....</p>
-                <a href="https://www.aitrends.com/" class="btn btn-dark">Read More..</a>
-                <a href="" class="btn btn-dark">Read More..</a>
+                  <br>
+                <a href="https://www.aitrends.com/" class="btn btn-md btn-dark">Read More..</a>
+
           </div>
-          
+
       </div>
       <hr class="text-dark">
       <div class="row">
@@ -980,24 +1079,25 @@
               <img src="{% static 'assets/metaverse.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
           </div>
           <br>
-          <div class="col-lg-6">
+          <div class="col-lg-6"style="margin-top:0.5rem">
               <h2 id="tech-topic2">Metaverse</h2>
               <p>What is the Metaverse?
                 The metaverse is a shared 3D virtual world in which you can socialize, collaborate, learn, and play.
-  
+
                 When discussing the metaverse, it is important to make a distinction between “a metaverse” and “The
                 Metaverse.”
-  
+
                 The distinction has to do with control.
-  
+
                 A metaverse can be created by any organization whose goal is to create this 3D virtual environment/world.</p>
                 <p style="font-family:serif">There has been a significant rise in searches for “metaverse” after Facebook’s
                   Connect Keynote 2021
                   presentation where Mark Zuckerberg, CEO of Facebook, shared his vision of the metaverse, along with their
                   parent company’s name change to Meta.....</p>
-                  <a href="https://about.meta.com/what-is-the-metaverse/" class="btn btn-dark">Read More..</a>
+                  <br>
+                  <a href="https://about.meta.com/what-is-the-metaverse/" class="btn btn-md btn-dark">Read More..</a>
           </div>
-          
+
       </div>
       <hr class="text-dark">
       <!-- Add more rows for additional tech topics -->
@@ -1006,7 +1106,7 @@
               <img src="{% static 'assets/blockchain.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
           </div>
           <br>
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="margin-top:0.5rem">
               <h2 id="tech-topic3">Blockchain</h2>
               <p>Blockchain is a group of blocks that are connected, each block to the one
                 before. The first block is
@@ -1020,10 +1120,10 @@
                 <br>
                 <a target="_blank"
                 href="https://academy.binance.com/en/glossary/blockchain?utm_campaign=googleadsxacademy&utm_source=bing_ads&utm_medium=cpc&ref=TDJYLZ1Y&&msclkid=ddd8c378975815356e4aa067aa7dc31d&gclid=ddd8c378975815356e4aa067aa7dc31d&gclsrc=3p.ds"
-                class="btn btn-dark">Read More..</a>
-    
+                class="btn btn-md btn-dark">Read More..</a>
+
           </div>
-          
+
       </div>
       <hr class="text-dark">
       <!-- Add more rows for additional tech topics -->
@@ -1032,7 +1132,7 @@
               <img src="{% static 'assets/IOT.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
           </div>
           <br>
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="margin-top:0.5rem">
               <h2 id="tech-topic4">IOT( Internet of Things )</h2>
               <p>
               Internet of Things (IoT) is the networking of physical objects that contain
@@ -1044,25 +1144,25 @@
                 able to produce large amounts
                 of data. This can be particularly used in applications such as Artificial Intelligence and Machine
                 Learning.
-  
+
                 Most of IoT devices can produce in fact a great variety of Time Series data which are of huge interest in
                 Artificial Intelligence....</p>
                 <br>
                 <a target="_blank"
                 href="https://www.educba.com/introduction-to-iot/#:~:text=Internet%20of%20things%20or%20IoT%20is%20a%20system,share%20data%20with%20other%20devices%20over%20the%20internet."
-                class="btn btn-dark">Read More..</a>
+                class="btn btn-md btn-dark">Read More..</a>
           </div>
-          
+
       </div>
       <hr class="text-dark">
       <!-- Add more rows for additional tech topics -->
-        <div class="row"> 
+        <div class="row">
           <div class="col-lg-6">
             <img src="{% static 'assets/mixed reality.jpg' %}" alt="Tech Topic 2 Image" class="img-fluid">
         </div>
         <br>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="margin-top:0.5rem">
               <h2 id="tech-topic5">Mixed Reality(MR)</h2>
               <p style="font-family:serif">Mixed Reality (MR) combines both Augmented Reality and Virtual Reality. Mixed
                 Reality allows you to
@@ -1076,13 +1176,13 @@
                 space, you’re in..</p>
                 <br>
               <a target="_blank" href="https://docs.microsoft.com/en-us/training/modules/intro-to-mixed-reality/"
-                class="btn btn-dark">Read More..</a>
+                class="btn btn-md btn-dark">Read More..</a>
           </div>
-          
+
       </div>
   </div>
+ </section>
 </section>
-
 
       <section>
         <div class="message">
@@ -1092,7 +1192,7 @@
           <div class="card-p">
             <div class="clip-path">
               <p>Thank-you so much for visiting our website:)</p>
-              
+
               <p class="content-p">
                 This website is all about to tackle the inquisitiveness of an student. Moreover, it
                 provides full to fit solutions to the problems related to notes and provides tech-articles which not
