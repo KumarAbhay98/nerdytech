@@ -11,9 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import os
-import django_heroku
-import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -120,13 +118,23 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'  # Static files URL
+STATICFILES_DIRS = [BASE_DIR / "static"]  # Static files directory in the root
+
+# Additional locations of static files
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'app/static'),
+#     # Add more paths as needed
+# ]
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# settings.py
+
+# ...
 
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'Static'),)
 
-django_heroku.settings(locals())
-
-
+# ...
 
