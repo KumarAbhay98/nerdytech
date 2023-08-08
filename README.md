@@ -1,7 +1,7 @@
 # Nerdy Website
 
 
-<img width="162" alt="Screenshot 2023-08-09 032031" src="https://github.com/KumarAbhay98/nerdytech/assets/92244303/f69cac35-80ee-4b09-9b2e-be34d0957933">
+<img width="162" alt="Screenshot 2023-08-09 032031" src="https://github.com/KumarAbhay98/nerdytech/assets/92244303/4a3d8a88-c309-4e07-a9cb-5e1b01fb3c96">
 
 
 Visit the live website: [BoxxOffice](https://boxxoffice.netlify.app/)
