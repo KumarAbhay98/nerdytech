@@ -1,0 +1,1 @@
+web gunicorn nerdy.wsgi:application --log-file -
