@@ -3,7 +3,7 @@
 
 <img width="147" alt="Screenshot 2023-08-09 032417" src="https://github.com/KumarAbhay98/nerdytech/assets/92244303/c2168399-c460-47d4-8ea7-e515e187cc79">
 
-
+The initial version of the website was : https://nerddytechh.netlify.app/
 Visit the live website: [Nerdy](http://nerrdytechhs.pythonanywhere.com/)
 
 Welcome to Nerdy, a vibrant and engaging website built using frontend tools and Django for user authentication and engagement. Nerdy features a bright color scheme of yellow and blue, providing a visually appealing and user-friendly experience. This README will guide you through the project's features, deployment, technologies used, and more.
